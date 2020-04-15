@@ -1,9 +1,9 @@
 class TaskSerializer < ActiveModel::Serializer
-  attributes :id, :name, :description, :name_plus_pokemon
+  attributes :id, :name, :description, :created_at
 
-  # has_many :todos
-
-  def name_plus_pokemon
-    object.name + "squirtle"
-  end
+  # has_many :steps
+  
+  # def name_plus_pokemon
+  #   object.name + "squirtle"
+  # end
 end

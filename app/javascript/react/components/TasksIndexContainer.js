@@ -1,15 +1,14 @@
 import React, { useState, useEffect } from "react"
 
 const TasksIndexContainer = (props) => {
-  debugger;
   const [tasks, setTasks] = useState([])
-  debugger;
 
   useEffect(() => {
+    // debugger
     fetch("/api/v1/tasks.json")
     .then(response => response.json())
     .then(taskBody => {
-      debugger;
+      // debugger;
       setTasks(taskBody)
     })
     .catch(error => console.error(`Error in fetch: ${error.message}`))
