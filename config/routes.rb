@@ -3,12 +3,18 @@ Rails.application.routes.draw do
 
   # routes that need to be setup to match React Router routes
   get '/tasks', to: "static_pages#index"
+  get '/tasks/:id', to: "static_pages#index"
 
   devise_for :users
 
   namespace :api do
     namespace :v1 do
-      resources :tasks, only: :index
+      resources :tasks, only: [:index, :create]
     end
   end
+
+  # namespace :admin do 
+  #   resources :tasks, only: [:index]
+  # end
+
 end
