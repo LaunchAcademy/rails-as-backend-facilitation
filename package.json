@@ -25,7 +25,7 @@
     "fetch-mock": "~5.13.1",
     "jest": "~23.4.1",
     "webpack-cli": "^2.0.10",
-    "webpack-dev-server": "2.11.2"
+    "webpack-dev-server": "3.1.11"
   },
   "scripts": {
     "dev:client": "./bin/webpack-dev-server",
